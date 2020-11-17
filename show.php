@@ -36,6 +36,6 @@ mysqli_close($conn);
 ?>
 </body>
 <body>
-    <a href="https://google.com" class="button">Go to Google</a>
+    <a class="btn" href="https://google.com" class="button">Go to Google</a>
 </body>
 </html>
