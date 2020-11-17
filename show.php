@@ -25,6 +25,10 @@ while($Result = mysqli_fetch_array($res))
   <tr>
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
+    <td>
+        <input type="button" value="แก้ไข" onclick="window.location.href='https://itf13.azurewebsites.net/form.html'" /> 
+        <input type="button" value="ลบ" onclick="window.location.href='https://itf13.azurewebsites.net/form.html'" />
+    </td>
   </tr>
 <?php
 }
