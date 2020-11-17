@@ -35,4 +35,11 @@ while($Result = mysqli_fetch_array($res))
 mysqli_close($conn);
 ?>
 </body>
+<body>
+
+<h1>The button Element</h1>
+
+<button type="button" onclick="alert('https://itf13.azurewebsites.net/form.html')">เพิ่ม</button>
+ 
+</body>
 </html>
