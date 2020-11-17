@@ -37,7 +37,7 @@ mysqli_close($conn);
 </body>
 <body>
 
-<button type="button" herf="https://itf13.azurewebsites.net/form.html">เพิ่ม</button>
+<button type="button" href="https://itf13.azurewebsites.net/form.html">เพิ่ม</button>
  
 </body>
 </html>
