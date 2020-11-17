@@ -35,7 +35,7 @@ while($Result = mysqli_fetch_array($res))
 mysqli_close($conn);
 ?>
 </body>
-<body>
-    <a class="btn" href="https://google.com" class="button">Go to Google</a>
-</body>
+<form>
+    <input type="button" value="เพิ่ม" onclick="window.location.href='https://itf13.azurewebsites.net/form.html'" />
+</form>
 </html>
