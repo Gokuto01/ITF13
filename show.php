@@ -35,7 +35,7 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
     <td>
-        <input type="button" value="แก้ไข" onclick="delete_row('<?php $Result['name']?>','')" /> 
+        <input type="button" value="แก้ไข" onclick="delete_row('<?php $Result['name']?>','<?php $conn ?>')" /> 
         <input type="button" value="ลบ" onclick="window.location.href='https://itf13.azurewebsites.net/form.html'" />
     </td>
   </tr>
