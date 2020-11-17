@@ -26,7 +26,7 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
     <td>
-        <input type="button" value="แก้ไข" onclick="window.location.href='https://itf13.azurewebsites.net/edit.php?name=<?php echo $Result['Name'];?>&comment=<?php echo $Result['Comment'];?>&link=<?php echo &$Result['Link'];?>'" /> 
+        <input type="button" value="แก้ไข" onclick="window.location.href='https://itf13.azurewebsites.net/edit.php?name=<?php echo $Result['Name'];?>&comment=<?php echo $Result['Comment'];?>&link=<?php echo $Result['Link'];?>'" /> 
         <input type="button" value="ลบ" onclick="window.location.href='https://itf13.azurewebsites.net/delete.php?rn=<?php echo $Result['Name'];?>'" />
     </td>
   </tr>
