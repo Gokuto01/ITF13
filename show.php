@@ -19,6 +19,15 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
     <th width="150"> <div align="center">Action </div></th>
   </tr>
 <?php
+    function delete_row($row,$conn)
+    {
+    $delete_row = "DELETE FROM guestbook WHERE Name = $row";
+    if (mysqli_query($conn, $sql)) {
+    echo "New record created successfully";
+  } else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+  }
+    }
 while($Result = mysqli_fetch_array($res))
 {
 ?>
@@ -26,7 +35,7 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
     <td>
-        <input type="button" value="แก้ไข" onclick="window.location.href='https://itf13.azurewebsites.net/form.html'" /> 
+        <input type="button" value="แก้ไข" onclick="delete_row('<?php $Result['name']?>')" /> 
         <input type="button" value="ลบ" onclick="window.location.href='https://itf13.azurewebsites.net/form.html'" />
     </td>
   </tr>
