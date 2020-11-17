@@ -21,16 +21,17 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 <?php    
 while($Result = mysqli_fetch_array($res))
 {
-  echo "
+?>
   <tr>
-    <td>".Result['Name']."</td>
-    <td>".Result['Comment']."</td>
+    <td><?php echo $Result['Name'];?></div></td>
+    <td><?php echo $Result['Comment'];?></td>
     <td>
         <input type="button" value="แก้ไข" onclick="" /> 
-//         <input type="button" value="ลบ" onclick="window.location.href='https://itf13.azurewebsites.net/delete.php?rn=$Result[Name]'" />
+        <input type="button" value="ลบ" onclick="window.location.href='https://itf13.azurewebsites.net/delete.php?rn=$Result[Name]'" />
     </td>
   </tr>
-  ";
+?>
+<?php
 }
 ?>
 </table>
