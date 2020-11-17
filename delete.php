@@ -8,16 +8,18 @@ if (mysqli_connect_errno($conn))
 }
 
 $Name=$_GET['rn'];
-$query = "DELETE FROM guestbook WHERE Name = $Name";
+$query = "DELETE FROM guestbook WHERE Name = '$Name'";
 
 $data = mysqli_query($conn, $query);
 
 if($data)
 {
-    echo "Succcess"
+    echo "Succcess";
 }
 else
 {
-    echo "fail"
+    echo "fail";
 }
+
+echo var_export();
 ?>
