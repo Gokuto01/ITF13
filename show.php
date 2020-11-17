@@ -21,12 +21,13 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 <?php
     function delete_row($row,$conn)
     {
-    $delete_row = "DELETE FROM guestbook WHERE Name = $row";
-    if (mysqli_query($conn, $sql)) {
-    echo "New record created successfully";
-  } else {
-    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-  }
+        echo $row
+//     $delete_row = "DELETE FROM guestbook WHERE Name = $row";
+//     if (mysqli_query($conn, $sql)) {
+//     echo "New record created successfully";
+//   } else {
+//     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+//   }
     }
 while($Result = mysqli_fetch_array($res))
 {
