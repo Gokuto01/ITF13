@@ -13,7 +13,7 @@
 ?>
 <div class="h-100" style="display:grid; align-items: center;">
     <div class="roundred p-3 shadow">
-  <form action = "insert.php" method = "post" id="CommentForm" >
+  <form action = "update.php" method = "post" id="CommentForm" >
     <div class="form-group">
       <label >Name</label>
       <input class="form-control" type="text" name = "name" id="idName" placeholder="Enter Name" value=<?php echo $Name;?>>
