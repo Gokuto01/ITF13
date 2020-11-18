@@ -18,7 +18,7 @@
     Link:<br>
     <input type="text" name = "link" id="idLink" placeholder="Enter Link" value=<?php echo $Link;?>> <br>
     ID:<br>
-    <input type="text" name = "stid" id="idstudent" placeholder="Enter Link" value=<?php echo $ID;?>> <br><br>
+    <input type="text" name = "stid" id="idstudent" placeholder="Enter Link" value=<?php echo $ID;?> disabled> <br><br>
 
     <input type="submit" id="commentBtn">
   </form> 
