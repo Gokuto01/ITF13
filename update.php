@@ -11,7 +11,8 @@ $name = $_POST['name'];
 $comment = $_POST['comment'];
 $link = $_POST['link'];
 $id="SELECT ID FROM guestbook WHERE Name=$name";
-$res = mysqli_query($conn, $id); 
+$res = mysqli_query($conn, $id);
+$Result = mysqli_fetch_array($res)
 echo $name;
 echo $comment;
 echo $link;
