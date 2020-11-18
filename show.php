@@ -18,7 +18,7 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
     <th width="100"> <div align="center">Name</div></th>
     <th width="350"> <div align="center">Comment </div></th>
     <th width="350"> <div align="center">Link </div></th>
-    <th width="150"> <div align="center">Action </div></th>
+    <th width="300"> <div align="center">Action </div></th>
   </tr>
 <?php    
 while($Result = mysqli_fetch_array($res))
@@ -29,8 +29,8 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Comment'];?></td>
     <td><?php echo $Result['Link'];?></td>
     <td>
-        <input class="btn btn-warning align-middle" type="button" value="แก้ไข" onclick="window.location.href='https://itf13.azurewebsites.net/edit.php?name=<?php echo $Result['Name'];?>&comment=<?php echo $Result['Comment'];?>&link=<?php echo $Result['Link'];?>&id=<?php echo $Result['ID'];?>'" /> 
-        <input class="btn btn-danger align-middle" type="button" value="ลบ" onclick="window.location.href='https://itf13.azurewebsites.net/delete.php?rn=<?php echo $Result['Name'];?>'" />
+        <input class="btn btn-warning" type="button" value="แก้ไข" onclick="window.location.href='https://itf13.azurewebsites.net/edit.php?name=<?php echo $Result['Name'];?>&comment=<?php echo $Result['Comment'];?>&link=<?php echo $Result['Link'];?>&id=<?php echo $Result['ID'];?>'" /> 
+        <input class="btn btn-danger" type="button" value="ลบ" onclick="window.location.href='https://itf13.azurewebsites.net/delete.php?rn=<?php echo $Result['Name'];?>'" />
     </td>
   </tr>
 <?php
@@ -41,7 +41,7 @@ while($Result = mysqli_fetch_array($res))
 mysqli_close($conn);
 ?>
 <form>
-    <input class="btn btn-success align-middle" type="button" value="เพิ่ม" onclick="window.location.href='https://itf13.azurewebsites.net/form.html'" />
+    <input class="btn btn-success" type="button" value="เพิ่ม" onclick="window.location.href='https://itf13.azurewebsites.net/form.html'" />
 </form>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
