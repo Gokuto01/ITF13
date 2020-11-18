@@ -24,3 +24,4 @@ if (mysqli_query($conn, $sql)) {
   
 mysqli_close($conn);
 ?>
+<input type="button" value="กลับหน้าหลัก" onclick="window.location.href='https://itf13.azurewebsites.net/show.php'" />
