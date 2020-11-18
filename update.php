@@ -20,8 +20,8 @@ while($Result = mysqli_fetch_array($res))
     }
 }
 $sql = "UPDATE guestbook 
-        SET Name='$name', Comment='$comment', Link='$link'
-        WHERE ID=$id";
+        SET Comment='$comment', Link='$link'
+        WHERE ID='$id'";
 
 if (mysqli_query($conn, $sql)) {
     echo "Update successfully";
