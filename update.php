@@ -24,7 +24,7 @@ $sql = "UPDATE guestbook
         WHERE ID='$id'";
 
 if (mysqli_query($conn, $sql)) {
-    echo "Update successfully";
+    echo "Update successfully"; echo $id;
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
