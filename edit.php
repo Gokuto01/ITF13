@@ -20,7 +20,7 @@
     </div>
     <div class="form-group">
       <label >Comment</label>
-      <textarea class="form-control" rows="10" cols="20" name = "comment" id="idComment" placeholder="Enter Comment" value=<?php echo $Comment;?>></textarea>
+      <input class="form-control" rows="10" cols="20" name = "comment" id="idComment" placeholder="Enter Comment" value=<?php echo $Comment;?>>
     </div>  
     <div class="form-group">
       <label >Link</label>
