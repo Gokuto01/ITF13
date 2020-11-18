@@ -35,7 +35,7 @@ if (mysqli_query($conn, $sql)) {
   
 mysqli_close($conn);
 ?>
-<div>
+<div class="my-5">
 <input class="btn btn-success" type="button" value="กลับหน้าหลัก" onclick="window.location.href='https://itf13.azurewebsites.net/show.php'" />
 </div>
 </div>
