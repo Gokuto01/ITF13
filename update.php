@@ -10,15 +10,8 @@ if (mysqli_connect_errno($conn))
 $name = $_POST['name'];
 $comment = $_POST['comment'];
 $link = $_POST['link'];
-$id = '';
-$res = mysqli_query($conn, 'SELECT * FROM guestbook');
- 
-while($Result = mysqli_fetch_array($res))
-{
-    if ($Result['Name'] == $name){
-        $id = $Result['ID'];
-    }
-}
+$id = $_POST['id'];
+
 $sql = "UPDATE guestbook 
         SET Comment='$comment', Link='$link'
         WHERE ID='$id'";
