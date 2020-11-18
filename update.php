@@ -17,7 +17,7 @@ echo $name;
 echo $comment;
 echo $link;
 echo $id;
-echo $res;
+echo $Result;
 // $sql = "UPDATE guestbook 
 //         SET Name=$name, Comment=$comment, Link=$link
 //         WHERE = 
