@@ -26,8 +26,8 @@
       <label >Link</label>
       <input class="form-control" type="text" name = "link" id="idLink" placeholder="Enter Link"value=<?php echo $Link;?>>
     </div> 
-    <input class="btn btn-success" type="submit" id="commentBtn">
-    <input type="text" name = "stid" id="idstudent" placeholder="Enter Link" style="visibility:hidden;" value=<?php echo $ID;?> >
+    <div><input class="btn btn-success" type="submit" id="commentBtn"></div>
+    <div><input type="text" name = "stid" id="idstudent" placeholder="Enter Link" style="visibility:hidden;" value=<?php echo $ID;?>></div>
   </form>
   </div>
   </div>
