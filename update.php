@@ -7,12 +7,12 @@ if (mysqli_connect_errno($conn))
     die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
 
-
 $name = $_POST['name'];
 $comment = $_POST['comment'];
 $link = $_POST['link'];
 $id="SELECT ID FROM guestbook WHERE Name=$name";
-echo $id;
+$res = mysqli_query($conn, $id); 
+echo $res['ID'];
 // $sql = "UPDATE guestbook 
 //         SET Name=$name, Comment=$comment, Link=$link
 //         WHERE = 
