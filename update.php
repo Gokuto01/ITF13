@@ -12,7 +12,7 @@ $comment = $_POST['comment'];
 $link = $_POST['link'];
 $id="SELECT ID FROM guestbook WHERE Name=$name";
 $res = mysqli_query($conn, $id); 
-echo $res['ID'];
+echo $res;
 // $sql = "UPDATE guestbook 
 //         SET Name=$name, Comment=$comment, Link=$link
 //         WHERE = 
