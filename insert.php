@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="container text-center" style="height: 100vh; background: url(https://images.unsplash.com/photo-1595113316349-9fa4eb24f884?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=100);background-repeat: no-repeat;background-size: cover;">
+  <div class="h-100" style="display:grid; align-items: center;">
+    <div class="roundred p-3 shadow">
 <?php
 
 $conn = mysqli_init();
@@ -24,4 +34,8 @@ if (mysqli_query($conn, $sql)) {
   
 mysqli_close($conn);
 ?>
-<input type="button" value="กลับหน้าหลัก" onclick="window.location.href='https://itf13.azurewebsites.net/show.php'" />
+<input class="btn btn-success" type="button" value="กลับหน้าหลัก" onclick="window.location.href='https://itf13.azurewebsites.net/show.php'" />
+</div>
+</div>
+</body>
+</html>
