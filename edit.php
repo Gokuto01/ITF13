@@ -9,7 +9,7 @@
     $Comment=$_GET['comment'];
     $Link=$_GET['link'];
 ?>
-  <form action = "insert.php" method = "post" id="CommentForm" >
+  <form action = "update.php" method = "post" id="CommentForm" >
     Name:<br>
     <input type="text" name = "name" id="idName" placeholder="Enter Name" value=<?php echo $Name;?>> <br>
     Comment:<br>
