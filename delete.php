@@ -14,12 +14,13 @@ $data = mysqli_query($conn, $query);
 
 if($data)
 {
-    echo "Succcess";
+    echo "Delete successfully";
 }
 else
 {
-    echo "fail";
+    echo "Error";
 }
 
 echo var_export();
 ?>
+<input type="button" value="กลับหน้าหลัก" onclick="window.location.href='https://itf13.azurewebsites.net/show.php'" />
