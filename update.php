@@ -19,17 +19,15 @@ while($Result = mysqli_fetch_array($res))
         $id = $Result['ID'];
     }
 }
-echo $id;
-// $sql = "UPDATE guestbook 
-//         SET Name=$name, Comment=$comment, Link=$link
-//         WHERE = 
+$sql = "UPDATE guestbook 
+        SET Name=$name, Comment=$comment, Link=$link
+        WHERE ID=$id";
 
-
-// if (mysqli_query($conn, $sql)) {
-//     echo "New record created successfully";
-//   } else {
-//     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-//   }
+if (mysqli_query($conn, $sql)) {
+    echo "New record created successfully";
+  } else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+  }
   
-// mysqli_close($conn);
+mysqli_close($conn);
 ?>
